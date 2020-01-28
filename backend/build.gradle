@@ -1,0 +1,24 @@
+plugins {
+    id 'application'
+    id 'idea'
+}
+version '1.0-SNAPSHOT'
+mainClassName = 'project.Application'
+
+wrapper {
+    gradleVersion = '6.0'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web:2.2.4.RELEASE'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+    testCompile 'org.mockito:mockito-core:2.22.0'
+}
