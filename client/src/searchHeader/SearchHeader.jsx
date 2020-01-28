@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import ProductGrid from '../homePage/productGrid/ProductGrid';
-import './SearchHeader.scss';
 import searchPageActions from '../homePage/searchPageActions';
 import {useDispatch} from 'react-redux';
+import './SearchHeader.scss';
 
 const SearchHeader = () => {
   const [searchTerm, setSearchTerm] = useState('');
