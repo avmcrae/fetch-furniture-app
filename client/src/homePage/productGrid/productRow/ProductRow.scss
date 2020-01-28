@@ -1,0 +1,47 @@
+@import "src/cssVariables";
+
+.productRow {
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.clickableProduct {
+    display: flex;
+    height: 95%;
+    width: 90%;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+.photoContainer {
+    margin-top: 20px;
+    text-align: center;
+    width: 5%;
+}
+
+.productInformation {
+    width: 95%;
+}
+
+.productDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
+}
+
+@include mobile-only {
+    .photoContainer {
+        width: 100%;
+    }
+
+    .productInformation {
+        width: 80%;
+    }
+}

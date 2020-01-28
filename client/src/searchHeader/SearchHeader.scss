@@ -1,0 +1,22 @@
+@import "src/cssVariables";
+
+.appHeader {
+  font-size: 28px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.searchBoxContainer {
+  margin: 0 50px;
+  position: relative;
+}
+
+.productSearchField {
+  width: 100%;
+}
+
+@include mobile-only {
+  .searchBoxContainer {
+    margin: 0;
+  }
+}
